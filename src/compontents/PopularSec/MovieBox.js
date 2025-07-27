@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 function MovieBox(props) {
     const navigate = useNavigate();
     function handleNavigate(id) {
-        console.log(id)
         navigate(`movie-details/${id}`)
     }
     return (

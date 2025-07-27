@@ -4,6 +4,7 @@ import HeaderSec from './compontents/HeaderSec';
 import { Routes, Route} from 'react-router-dom';
 import MessageSec from './compontents/MessageSec';
 import PopularSec from './compontents/PopularSec/PopularSec';
+import MovieDetails from './pages/MovieDetails';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           </>
           } 
           />
+        <Route path='/movie-details/:id' element={<MovieDetails />} />
       </Routes>
     </div>
   );

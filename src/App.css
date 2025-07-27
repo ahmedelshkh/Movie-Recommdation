@@ -127,15 +127,15 @@ header .watch-list svg {
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     gap: 20px;
 }
-.popular .box {
+.box {
     cursor: pointer;
 }
-.popular .box .image {
+.box .image {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
 }
-.popular .box .image > svg{
+.box .image > svg{
     width: 35px;
     position: absolute;
     top: 10px;
@@ -143,34 +143,34 @@ header .watch-list svg {
     fill: white;
     cursor: pointer;
 }
-.popular .box .image img {
+.box .image img {
     max-width: 100%;
 }
-.popular .box .progress-container {
+.box .progress-container {
     position: absolute;
     bottom: -23px;
     left: -21px;
 }
-.popular .box .progress-container span {
+.box .progress-container span {
     color: white;
     position: absolute;
     top: 41%;
     left: 33px;
     font-size: 14px;
 }
-.popular .box h3 {
+.box h3 {
     font-size: 20px;
 }
-.popular .box .date {
+.box .date {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.popular .box .date span {
+.box .date span {
     color: #bbb;
     font-size: 14px;
 }
-.popular .box .date svg {
+.box .date svg {
     width: 20px;
 }
 /* pages */
@@ -188,4 +188,18 @@ header .watch-list svg {
 }
 .pages li a.selected {
     background-color: coral;
+}
+/* Start Movie Details */
+.movie-details .content {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+.movie-details .content .box .image {
+    width: 150px;
+}
+.movie-details .content .box h3 {
+    font-size: 18px;
+    max-width: 100%;
+    overflow: hidden;
 }
