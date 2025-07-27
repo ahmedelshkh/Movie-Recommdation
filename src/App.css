@@ -97,6 +97,7 @@ header .watch-list svg {
     padding: 15px 20px;
     border: none;
     border-radius: 6px;
+    flex: 1;
 }
 .message form input[type=text]::placeholder {
     color: #bbb;
@@ -171,4 +172,20 @@ header .watch-list svg {
 }
 .popular .box .date svg {
     width: 20px;
+}
+/* pages */
+.pages {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.pages li a{
+    padding: 20px 25px;
+    color: black;
+    border-radius: 6px;
+}
+.pages li a.selected {
+    background-color: coral;
 }
