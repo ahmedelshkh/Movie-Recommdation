@@ -114,3 +114,61 @@ header .watch-list svg {
     color: black;
     transform: scale(1.1);
 }
+/* Start Popoular Section */
+.popular {
+    padding: 20px;
+}
+.popular h1 {
+    margin: 40px 0;
+}
+.popular .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 20px;
+}
+.popular .box {
+    cursor: pointer;
+}
+.popular .box .image {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+.popular .box .image > svg{
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    fill: white;
+    cursor: pointer;
+}
+.popular .box .image img {
+    max-width: 100%;
+}
+.popular .box .progress-container {
+    position: absolute;
+    bottom: -23px;
+    left: -21px;
+}
+.popular .box .progress-container span {
+    color: white;
+    position: absolute;
+    top: 41%;
+    left: 33px;
+    font-size: 14px;
+}
+.popular .box h3 {
+    font-size: 20px;
+}
+.popular .box .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular .box .date span {
+    color: #bbb;
+    font-size: 14px;
+}
+.popular .box .date svg {
+    width: 20px;
+}

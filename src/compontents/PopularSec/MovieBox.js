@@ -14,10 +14,13 @@ function MovieBox(props) {
                         </g>
                     </svg>
                     <div className="progress-container">
-                        <svg className="progress-ring" width="100" height="100">
-                            <circle className="progress-ring__circle" stroke="blue" stroke-width="6" fill="transparent" r="45" cx="50"
+                        <svg className="progress-ring" width={((parseFloat(props.rate)/10)) * 80 } height="100">
+                            <circle className="progress-ring__circle" stroke="green" stroke-width="3" fill="transparent" r="25" cx="50"
                                 cy="50" />
                         </svg>
+                        <span>
+                            {props.rate}
+                        </span>
                     </div>
             </div>
             <div className="des">
