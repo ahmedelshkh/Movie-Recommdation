@@ -1,7 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 
 function MovieBox(props) {
+    const navigate = useNavigate();
+    function handleNavigate(id) {
+        navigate(`movie-details/${id}`)
+    }
     return (
-        <div key={props.key} className="box">
+        <div onclick={handleNavigate(props.key)} key={props.key} className="box">
             <div className="image">
                 <img src={props.img} alt="Movie"/>
                     <svg fill="#000000" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">

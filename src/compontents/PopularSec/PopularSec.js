@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import {useEffect, useState } from 'react';
 import MovieBox from './MovieBox';
 
@@ -12,6 +11,7 @@ function PopularSec() {
         .then(data => setMovies(data.results))
         .catch(err => console.log(err));
     },[])
+
     return (
         <div className="popular">
             <h1>Welcome To Our Movie App</h1>
