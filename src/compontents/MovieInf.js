@@ -2,17 +2,17 @@
 
 function MovieInf(props) {
     return (
-        <div class="movie">
-            <div class="image">
+        <div className="movie">
+            <div className="image">
                 <img src={props.img} alt="cover" />
             </div>
-            <div class="info">
-                <div class="title">
+            <div className="info">
+                <div className="title">
                     <div>
                         <h1>
                             {props.title}
                         </h1>
-                        <p class="date">
+                        <p className="date">
                             {props.date}
                         </p>
                     </div>
@@ -26,33 +26,43 @@ function MovieInf(props) {
                         </g>
                     </svg>
                 </div>
-                <div class="rate">
+                <div className="rate">
                     {props.rate}
                 </div>
-                <p class="des">
+                <p className="des">
                     {props.des}
                 </p>
-                <div class="lables">
+                <div className="lables">
                     {
-                        props.genres.map((label)=> {
-                            return (
-                            <span>
-                                {label.name}
-                            </span>
-                            )
-                        })
+                        // props.genres.map((label)=> {
+                        //     return (
+                        //     <span>
+                        //         {label.name}
+                        //     </span>
+                        //     )
+                        // })
                     }
                 </div>
-                <div class="time">
-                    <span class="duration">
-                    {props.durtion}
-                    </span>
-                    <span class="lang">
-                    {props.lang}
-                    </span>
+                <div className="time">
+                    <div className="duration">
+                        <span className="bold">
+                            Duration:
+                        </span>
+                        <span>
+                            {props.duration} minutes
+                        </span>
+                    </div>
+                    <div className="lang">
+                        <span className="bold">
+                            Langauge: 
+                        </span>
+                        <span>
+                            {props.lang}
+                        </span>
+                    </div>
                 </div>
-                <img src="" alt="image"/>
-                    <a href={props.website}>Website</a>
+                {/* <img src="" alt="image"/> */}
+                <a className="website" href={props.website}>Website</a>
             </div>
         </div>
     )

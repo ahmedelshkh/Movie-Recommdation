@@ -38,7 +38,7 @@ function MovieDetails() {
                 website={movieDetails.homepage}
                 duration={movieDetails.runtime}
             />
-            <h1>Popular</h1>
+            <h1>Recommendation</h1>
             <div className='content'>
                 {
                     movies.map((movie) => {

@@ -195,6 +195,48 @@ header .watch-list svg {
     overflow-x: auto;
     gap: 20px;
 }
+.movie-details > h1 {
+    margin: 40px 0 20px 0;
+}
+.movie-details .movie {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.movie .image {
+    flex: 1;
+}
+.movie .info {
+    flex: 2;
+}
+.movie-details .movie .image {
+    max-width: 500px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.movie-details .movie .image img {
+    max-width: 100%;
+}
+.movie .info .title {
+    display: flex;
+    justify-content: space-between;
+}
+.movie-details .movie .info .date {
+    color: #bbb;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.movie-details .movie .info svg {
+    width: 25px;
+}
+.movie .info .rate {
+    background-color: cornsilk;
+    border-radius: 6px;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid brown;
+    margin-bottom: 30px;
+}
 .movie-details .content .box .image {
     width: 150px;
 }
@@ -202,4 +244,22 @@ header .watch-list svg {
     font-size: 18px;
     max-width: 100%;
     overflow: hidden;
+}
+.movie .info .time {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+.movie .time .bold {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.movie .website {
+    display: inline-block;
+    border: 3px solid rgb(118, 118, 38);
+    padding: 5px 10px;
+    border-radius: 16px;
+    color: black;
+    margin-top: 40px;
 }
