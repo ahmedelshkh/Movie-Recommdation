@@ -11,26 +11,31 @@ function App() {
     <div className="App">
       <HeaderSec />
       <Routes>
-        <Route path='/' element={<MessageSec />} />
-        <Route path='/' element={<PopularSec />} />
+        <Route path='/' element={
+          <>
+          <MessageSec />
+          <PopularSec />
+            <ul className='pages'>
+              <li>
+                <a className='selected' herf='#'>1</a>
+              </li>
+              <li>
+                <a herf='#'>2</a>
+              </li>
+              <li>
+                <a herf='#'>3</a>
+              </li>
+              <li>
+                <a herf='#'>4</a>
+              </li>
+              <li>
+                <a herf='#'>...</a>
+              </li>
+            </ul>
+          </>
+          } 
+          />
       </Routes>
-      <ul className='pages'>
-        <li>
-          <a className='selected' herf='#'>1</a>
-        </li>
-        <li>
-          <a herf='#'>2</a>
-        </li>
-        <li>
-          <a herf='#'>3</a>
-        </li>
-        <li>
-          <a herf='#'>4</a>
-        </li>
-        <li>
-          <a herf='#'>...</a>
-        </li>
-      </ul>
     </div>
   );
 }

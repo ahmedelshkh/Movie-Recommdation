@@ -14,13 +14,13 @@ function PopularSec() {
 
     return (
         <div className="popular">
-            <h1>Welcome To Our Movie App</h1>
+            <h1>Popular</h1>
             <div className='content'>
                 {
                     movies.map((movie) => {
                         return(
                             <MovieBox
-                            key={movie.id}
+                            id={movie.id}
                             img={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                             title={movie.title}
                             date={movie.release_date}
